@@ -1,7 +1,7 @@
 {
   "name": "yuppie-ui",
   "private": false,
-  "version": "0.0.2-pre.2024828134345",
+  "version": "0.0.2",
   "type": "module",
   "author": "Changweihua",
   "description": "组件发布npm练习",
