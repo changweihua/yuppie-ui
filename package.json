@@ -18,7 +18,8 @@
     "./css": "./dist/style.css",
     ".": {
       "import": "./dist/yuppie-ui.js",
-      "require": "./dist/yuppie-ui.umd.cjs"
+      "require": "./dist/yuppie-ui.umd.cjs",
+      "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
