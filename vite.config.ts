@@ -14,7 +14,8 @@ export default defineConfig({
       // 指定 tsconfig 文件
       tsconfigPath: 'tsconfig.app.json',
       // 你希望将所有的类型合并到一个文件中，只需指定 rollupTypes: true
-      rollupTypes: false
+      rollupTypes: false,
+      outDir: "dist/types"
     })
   ],
   base: '/',

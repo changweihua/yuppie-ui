@@ -1,10 +1,12 @@
 //index.ts
 import type { App } from 'vue'
 import MyButton from './Button'
+import Panel from './Panel'
 
 // 所有组件列表
 const components = [
-    MyButton
+  MyButton,
+  Panel
 ]
 
 // 定义 install 方法
@@ -22,7 +24,8 @@ const install = (app: App): void => {
 }
 
 export {
-    MyButton
+  MyButton,
+  Panel
 }
 
 const YuppieUI = {
@@ -36,6 +39,7 @@ export default YuppieUI
  */
 declare module "vue" {
     export interface GlobalComponents {
-        MyButton: typeof MyButton
+      MyButton: typeof MyButton
+      Panel: typeof Panel
     }
 }

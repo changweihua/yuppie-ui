@@ -1,4 +1,3 @@
-// Button.vue
 <template>
     <button class="MyButton" type="button">
         我是一个按钮组件
