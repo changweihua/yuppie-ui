@@ -10,7 +10,7 @@
   "files": [
     "package.json",
     "README.md",
-    "lib"
+    "dist"
   ],
   "main": "./dist/yuppie-ui.umd.cjs",
   "module": "./dist/yuppie-ui.js",
