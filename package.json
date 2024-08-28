@@ -1,7 +1,7 @@
 {
   "name": "yuppie-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2-pre.2024828134345",
   "type": "module",
   "author": "Changweihua",
   "description": "组件发布npm练习",
@@ -26,7 +26,7 @@
     "build": "vue-tsc -b && vite build",
     "build-noEmiit": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "version": "vmark"
+    "release": "vmark"
   },
   "dependencies": {
     "vue": "^3.4.37",

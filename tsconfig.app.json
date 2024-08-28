@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["packages/**/*.ts", "packages/**/*.tsx", "packages/**/*.vue", "examples/**/*.ts", "examples/**/*.tsx", "examples/**/*.vue"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["packages/**/__tests__/*","examples/**/__tests__/*", "node_modules", "dist"]
 }
