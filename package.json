@@ -1,0 +1,45 @@
+{
+  "name": "yuppie-ui",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Changweihua",
+  "description": "组件发布npm练习",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "main": "./dist/yuppie-ui.umd.cjs",
+  "module": "./dist/yuppie-ui.js",
+  "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./css": "./dist/style.css",
+    ".": {
+      "import": "./dist/yuppie-ui.js",
+      "require": "./dist/yuppie-ui.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "build-noEmiit": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "version": "vmark"
+  },
+  "dependencies": {
+    "vue": "^3.4.37",
+    "yuppie-ui": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "terser": "^5.31.6",
+    "typescript": "^5.5.3",
+    "version-mark": "^0.0.5",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.0.3",
+    "vue-tsc": "^2.0.29"
+  }
+}
