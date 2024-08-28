@@ -10,7 +10,7 @@ export default defineConfig({
     //这里必须引入vite-plugin-dts插件，否则不会生成d.ts文件
     dts({
       // 这里定义了需要生成d.ts文件的目录，如果有多个目录，可以使用数组
-      include: ['./packages/**/*.{vue,ts}'],
+      include: ['./packages/**/*.{vue,ts,tsx}'],
       // 指定 tsconfig 文件
       tsconfigPath: 'tsconfig.app.json',
       // 你希望将所有的类型合并到一个文件中，只需指定 rollupTypes: true

@@ -8,8 +8,9 @@
   "license": "MIT",
   "types": "dist/types/index.d.ts",
   "files": [
+    "package.json",
     "README.md",
-    "dist"
+    "lib"
   ],
   "main": "./dist/yuppie-ui.umd.cjs",
   "module": "./dist/yuppie-ui.js",
@@ -31,8 +32,7 @@
     "release": "vmark"
   },
   "dependencies": {
-    "vue": "^3.4.37",
-    "yuppie-ui": "^0.0.0"
+    "vue": "^3.4.37"
   },
   "devDependencies": {
     "@types/node": "^22.5.1",
