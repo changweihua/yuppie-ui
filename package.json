@@ -35,7 +35,7 @@
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "commit": "git add . && git-cz",
-    "release": "standard-version"
+    "release": "standard-version && git push --follow-tags"
   },
   "lint-staged": {
     "*.{vue,tsx}": [
