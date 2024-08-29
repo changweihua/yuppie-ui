@@ -21,15 +21,15 @@
     "commit": false,
     "tag": false
   },
-  debug: false,
-  dryRun: false,
-  packageFiles: [{ filename: 'package.json', type: "json" }],
-  bumpFiles: [
-    { filename: 'package.json', type: "json" },
-    { filename: 'package-lock.json', type: "json" }
+  "debug": false,
+  "dryRun": false,
+  "packageFiles": [{ "filename": "package.json", "type": "json" }],
+  "bumpFiles": [
+    { "filename": "package.json", "type": "json" },
+    { "filename": "pnpm-lock.yaml", "type": "json" }
   ],
-  scripts: {
-    "prebump": "echo 9.9.9"
+  "scripts": {
+    # "prebump": "echo 9.9.9"
   }
 }
 
