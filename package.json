@@ -1,7 +1,7 @@
 {
   "name": "yuppie-ui",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "author": "Changweihua",
   "description": "基于Vue3的自定义UI框架, 供项目使用",
@@ -30,11 +30,12 @@
     "build": "vue-tsc -b && vite build",
     "build-noEmiit": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "release": "vmark",
+    "vmark": "vmark",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "release": "standard-version"
   },
   "lint-staged": {
     "*.{vue,tsx}": [
@@ -62,6 +63,7 @@
     "happy-dom": "^15.0.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
+    "standard-version": "^9.5.0",
     "terser": "^5.31.6",
     "typescript": "^5.5.4",
     "version-mark": "^0.0.5",
