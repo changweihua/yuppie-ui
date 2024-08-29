@@ -1,7 +1,7 @@
 {
   "name": "yuppie-ui",
   "private": false,
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "author": "Changweihua",
   "description": "基于Vue3的自定义UI框架, 供项目使用",
