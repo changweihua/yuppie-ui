@@ -1,19 +1,17 @@
 <template>
-    <button class="MyButton" type="button">
-        我是一个按钮组件
-    </button>
+    <div>{{ count }} x {{ times }} = {{ result }}</div>
+    <button class="MyButton" @click="times += 1">Increase</button>
 </template>
 
-<script lang="ts">
-export default {
-    name: 'MyButton', //组件名称，必须设置
-    data() {
-        return {}
-    },
-    methods: {},
-    filters: {},
-    created() { }
-}
+<script lang="ts" setup>
+import { computed, ref } from "vue";
+
+const props = defineProps<{ count: number }>();
+
+const times = ref(2);
+const result = computed(() => props.count * times.value);
+
+defineExpose(props);
 </script>
 
 <style>

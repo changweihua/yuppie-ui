@@ -6,5 +6,5 @@ import Panel from "./Panel.vue"
 Panel.install = (app: App) => {
     app.component(Panel.__name as string, Panel) //注册组件
 }
-  
+
 export default Panel

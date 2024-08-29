@@ -4,7 +4,7 @@
   "version": "0.0.7",
   "type": "module",
   "author": "Changweihua",
-  "description": "组件发布npm练习",
+  "description": "基于Vue3的自定义UI框架, 供项目使用",
   "license": "MIT",
   "types": "dist/types/index.d.ts",
   "files": [
@@ -25,23 +25,49 @@
     "./*": "./*"
   },
   "scripts": {
+    "prepare": "husky",
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "build-noEmiit": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "release": "vmark"
+    "release": "vmark",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "commit": "git add . && git-cz"
+  },
+  "lint-staged": {
+    "*.{vue,tsx}": [
+      "vitest related --run --coverage"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "vue": "^3.4.38"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@commitlint/cz-commitlint": "^19.4.0",
     "@types/node": "^22.5.1",
     "@vitejs/plugin-vue": "^5.1.2",
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "@vitest/ui": "^2.0.5",
+    "@vue/test-utils": "^2.4.6",
+    "commitizen": "^4.3.0",
+    "happy-dom": "^15.0.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
     "terser": "^5.31.6",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "version-mark": "^0.0.5",
-    "vite": "^5.4.1",
+    "vite": "^5.4.2",
     "vite-plugin-dts": "^4.0.3",
-    "vue-tsc": "^2.0.29"
+    "vitest": "^2.0.5",
+    "vue-tsc": "^2.1.0"
   }
 }
