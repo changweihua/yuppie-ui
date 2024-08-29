@@ -1,4 +1,6 @@
 变更日志
+### [9.9.9](https://github.com/changweihua/yuppie-ui/compare/v0.0.8...v9.9.9) (2024-08-29)
+
 ### [0.0.8](https://github.com/changweihua/yuppie-ui/compare/v0.0.7...v0.0.8) (2024-08-29)
 
 
