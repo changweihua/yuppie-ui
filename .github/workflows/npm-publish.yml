@@ -26,9 +26,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
           # 默认配置
           registry-url: https://registry.npmjs.org/
+      - run: npm install -g pnpm # 安装 PNPM
       # 安装依赖，相当于 npm ci
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile # 根据 lock 文件安装依赖
       # 执行构建步骤
       - name: 构建
         run: |

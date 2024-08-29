@@ -1,6 +1,7 @@
 // commit-lint config
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
+    // extends: ['@commitlint/config-conventional'],
+    extends: ['git-commit-emoji', 'cz'],
     // plugins: ['./commitlint-plugin-example'],
     rules: {
         'type-enum': [
