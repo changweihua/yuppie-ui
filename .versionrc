@@ -29,7 +29,6 @@
     { "filename": "pnpm-lock.yaml", "type": "json" }
   ],
   "scripts": {
-    # "prebump": "echo 9.9.9"
   }
 }
 
