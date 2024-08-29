@@ -1,4 +1,11 @@
 变更日志
+### [0.0.10](https://github.com/changweihua/yuppie-ui/compare/v0.0.9...v0.0.10) (2024-08-29)
+
+
+### 👷 Continuous Integration | CI 配置
+
+* **增加Action:** 增加Action ([325ff97](https://github.com/changweihua/yuppie-ui/commit/325ff979adbef8d3909c866acb0ad22f041866b5))
+
 ### [0.0.9](https://github.com/changweihua/yuppie-ui/compare/v9.9.9...v0.0.9) (2024-08-29)
 
 
