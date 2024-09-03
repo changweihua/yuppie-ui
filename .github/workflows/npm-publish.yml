@@ -57,6 +57,7 @@ jobs:
         run: pnpm publish
         env:
           # 在第三步中设置的 NPM_TOKEN
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: publish 成功通知
         run: echo pnpm 推送成功，请访问 https://changweihua.github.io
