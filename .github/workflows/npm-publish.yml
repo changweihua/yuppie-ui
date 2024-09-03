@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Npm Package
 
 # 触发工作流程的事件
 on:
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           # 默认配置，如果不配置将影响publish
-          registry-url: https://registry.npmjs.org/
+          # registry-url: https://registry.npmjs.org/
       - run: npm install -g pnpm # 安装 PNPM
       # 安装依赖，相当于 npm ci
       - name: Install dependencies
@@ -57,7 +57,7 @@ jobs:
         run: pnpm publish
         env:
           # 在第三步中设置的 NPM_TOKEN
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.YUPPIE_UI_TOKEN}}
           NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: publish 成功通知
         run: echo pnpm 推送成功，请访问 https://changweihua.github.io
