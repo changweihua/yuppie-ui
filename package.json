@@ -14,6 +14,9 @@
   ],
   "main": "./dist/yuppie-ui.umd.cjs",
   "module": "./dist/yuppie-ui.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "exports": {
     "./dist/style.css": "./dist/style.css",
     "./css": "./dist/style.css",
