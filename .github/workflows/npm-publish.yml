@@ -46,12 +46,12 @@ jobs:
       #     # 指定构建之后的产出路径
       #     FOLDER: dist
 
-      # 添加access token到.npmrc
-      - name: Add Npm Token
-        run: |
-        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
-          ls -al
-          cat ./.npmrc  
+      # # 添加access token到.npmrc
+      # - name: Add Npm Token
+      #   run: |
+      #   echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
+      #     ls -al
+      #     cat ./.npmrc
 
       - name: publish
         run: pnpm publish
