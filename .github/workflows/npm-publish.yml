@@ -3,8 +3,6 @@ name: Npm Package
 # 触发工作流程的事件
 on:
   push:
-    branches:
-      - main
     tags:
       - 'v*'
 
@@ -27,6 +25,28 @@ jobs:
           # 默认配置，如果不配置将影响publish
           registry-url: https://registry.npmjs.org
       - run: npm install -g pnpm # 安装 PNPM
+
+      #       - uses: dorny/paths-filter@v3
+      # -       #必须设定ID，用于后面读取这一步的结果
+      #         id: changes
+      #         with:
+      #           filters: |
+      #             update:
+      #               - 'main/**'
+      #               - 'types/**'
+      #               - 'utils/**'
+      #               - README.md
+      #               - package.json
+      #               - rollup.config.js
+      #               - tsconfig.json
+      #               - .babelrc
+      #               - .github/workflows/publish.yml
+      #         - name: Install pnpm
+      #         -       # 这里是当【changes】输出了update为true才执行执行编译等工作
+      #         if: steps.changes.outputs.update == 'true'
+      #         run: |
+      #           npm install -g pnpm
+
       # 安装依赖，相当于 npm ci
       - name: Install dependencies
         run: pnpm install --frozen-lockfile # 根据 lock 文件安装依赖
