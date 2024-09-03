@@ -23,10 +23,10 @@ const install = (app: App): void => {
   components.forEach(component => app.component(component.__name as string, component))
 }
 
-export {
-  MyButton,
-  Panel
-}
+// export {
+//   MyButton,
+//   Panel
+// }
 
 const YuppieUI = {
   install
